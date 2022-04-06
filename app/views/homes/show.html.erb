@@ -1,2 +1,6 @@
-<h1>Homes#show</h1>
-<p>Find me in app/views/homes/show.html.erb</p>
+ <% @book.each do |book| %>
+   <h3>:title</h3><tb> <%= book.title %></tb>
+   <h3>:body</h3><tb><%= book.body %></tb>
+ <% end %>
+
+   <%= link_to"edit",edit_book_path(@book.id)%>|<%= link_to"back","/books"%>

@@ -1,15 +1,14 @@
 class HomesController < ApplicationController
-  def top
-      @book =Book.new
-  end
   
   def new
   end      
 
   def index
+    
   end
 
   def show
+   @book =Book.all
   end
 
   def edit
